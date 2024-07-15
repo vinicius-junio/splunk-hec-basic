@@ -14,7 +14,10 @@
 <div align = "justify">
   O HTTP Event Collector (HEC) do Splunk é uma interface que permite enviar dados diretamente para o Splunk por meio de solicitações HTTP ou HTTPS. Ele foi projetado para facilitar a ingestão de dados de várias fontes em tempo real e é especialmente útil para enviar dados de aplicações, serviços web, dispositivos IoT e scripts personalizados.<br><br>
 Neste tutorial vou utilizar um código simples em python que envia um JSON com alguns eventos, e também mostrar como pode ser realizado via CURL.<br><br>
-  Por ser um tutorial básico do fluxo, estamos utilizando HTTP. E em Global Settings do HTTP Event Collector desativamos o "Enable SSL" para fins de aprendizado.
+  Por ser um tutorial básico do fluxo, estamos utilizando HTTP. E em Global Settings do HTTP Event Collector desativamos o "Enable SSL" para fins de aprendizado.<br><br>
+  <p align="center">
+  <img src="splunk_images/http_event_collector_architeture.png" alt="Splunk Index">
+  </p>
 </div>
 
 ## Configuração do Index
