@@ -37,7 +37,7 @@ Neste tutorial vou utilizar um código simples em python que envia um JSON com a
 
 <div align = "justify">
   O Data Inputs no Splunk é uma funcionalidade que permite configurar as fontes de dados que o Splunk irá monitorar e indexar. Quando você configura um novo Data Input, está essencialmente dizendo ao Splunk onde e como coletar os dados.<br><br>
-  Em nosso caso vamos coletar os dados via HEC (HTTP Event Collector).
+  Em nosso caso vamos coletar os dados via HEC (HTTP Event Collector).<br><br>
 </div>
 
   1. Clique em Settings -> Data Inputs.<br><br>
