@@ -13,7 +13,7 @@
 ## Introdução
 <div align = "justify">
   O HTTP Event Collector (HEC) do Splunk é uma interface que permite enviar dados diretamente para o Splunk por meio de solicitações HTTP ou HTTPS. Ele foi projetado para facilitar a ingestão de dados de várias fontes em tempo real e é especialmente útil para enviar dados de aplicações, serviços web, dispositivos IoT e scripts personalizados.<br><br>
-Neste tutorial vou utilizar um código simples em python que envia um arquivo JSON com alguns eventos.<br><br>
+Neste tutorial vou utilizar um código simples em python que envia um JSON com alguns eventos, e também mostrar como pode ser realizado via CURL.<br><br>
   Por ser um tutorial básico do fluxo, estamos utilizando HTTP. E em Global Settings do HTTP Event Collector desativamos o "Enable SSL" para fins de aprendizado.
 </div>
 
@@ -55,7 +55,7 @@ Neste tutorial vou utilizar um código simples em python que envia um arquivo JS
     curl -k http://<splunk_host>:8088/services/collector/event -H "Authorization: Splunk <seu_token>" -d "{\"event\": {\"timestamp\": \"2024-07-14T19:01:04.104900Z\", \"event\": {\"type\": \"modify\", \"source\": \"web_application\", \"severity\": \"warning\"}, \"user\": {\"id\": \"user234\", \"name\": \"User 0\", \"role\": \"user\"}, \"action\": {\"type\": \"login\", \"status\": \"failure\", \"ip_address\": \"192.168.42.105\"}, \"system\": {\"hostname\": \"webserver10\", \"os\": \"Oracle Linux 8.3\", \"application\": \"MyWebApp\", \"version\": \"3.2.9\"}}, \"sourcetype\": \"_json\"}"
   ```
 
-  Substituindo as informações do splunk_host e seu-token temos a resposta:<br>
+  Substituindo as informações do splunk_host e seu_token temos a resposta:<br>
   
   ```
     {"text":"Success","code":0}
